@@ -6,11 +6,6 @@ def show_img_in_windows(givenImg, testImg, matching_status):
 
     bleh = "" if matching_status else " don't"
 
-    # givenImg = cv2.imread(givenFile, 0)
-    # givenImg = resize_image(givenImg)
-
-    # testImg = cv2.imread(testFile, 0)
-    # testImg = resize_image(cv2.imread(testFile, 0))
     givenImg = convert_to_color_image(resize_image(crop_face((givenImg))))
     testImg = convert_to_color_image(resize_image(crop_face(testImg)))
 
